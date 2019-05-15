@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#remove default
-rm $HOME/.bashrc
-cd $HOME/.0/bash
-stow --target=$HOME .dotfiles
+# Append στο bashrc που ήδη το ubuntu έχει γράψει σε αυτό
+bashrc="~/.0/bash/.dotfiles/.bashrc"
+line="[ -f $bashrc ] && source $bashrc" 
+grep -Fxq "$line" ~/.bashrc || echo "$line" >> ~/.bashrc

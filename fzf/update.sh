@@ -1,3 +1,4 @@
 #!/bin/sh
 
-cd ~/.fzf && git pull && ./install
+# --all : δημιουργειτε ένα .fzf.bash που γίνεται source με το .bashrc. επιλέγουμε auto_completio, key_binding, update_config. Με το --all δεν μας κάνει ερωτήσεις. 
+cd ~/.fzf && git pull && ./install --all
