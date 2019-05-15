@@ -190,5 +190,3 @@ n(){
 
 # fzf dropdown list and not dropup
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash

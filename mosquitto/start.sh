@@ -7,6 +7,7 @@ mosquitto_server=$(find -L ~/0 -name ".mosquitto_server" | awk '{ gsub("'${prefi
 
 if [ -f ${prefix}${mosquitto_server} ]
 then
+sudo service mosquitto stop #Default ξεκινάει με systemd
 http_dir=$(dirname -- ${prefix}${mosquitto_server})
 cat > ${HOME}/.0/.tmp/mosquitto/mosquitto.conf <<EOF
 listener 1883
