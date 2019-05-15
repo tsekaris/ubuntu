@@ -1,3 +1,4 @@
 #!/bin/sh
 
-sudo apt-get install fzf -y
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install

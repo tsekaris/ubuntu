@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo apt-get install nodejs -y
+sudo apt-get install nodejs npm -y
