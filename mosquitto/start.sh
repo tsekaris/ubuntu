@@ -14,6 +14,6 @@ listener 8000
 protocol websockets
 http_dir $http_dir
 EOF
-mosquitto -c ${HOME}/.0/.tmp/mosquitto/mosquitto.conf -v
+mosquitto -c ${HOME}/.0/mosquitto/.tmp/mosquitto.conf -v
 fi
 

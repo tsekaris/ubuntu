@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pkill mosquitto
+sudo pkill mosquitto

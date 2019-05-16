@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo service mosquitto stop #Default ξεκινάει με systemd
+sudo systemctl stop mosquitto.service
