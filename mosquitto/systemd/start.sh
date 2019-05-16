@@ -8,12 +8,11 @@ mosquitto_server=$(find -L ~/0 -name ".mosquitto" | awk '{ gsub("'${prefix}'",""
 if [ -f ${prefix}${mosquitto_server} ]
 then
 http_dir=$(dirname -- ${prefix}${mosquitto_server})
-cat > ${HOME}/.0/mosquitto/.tmp/mosquitto.conf <<EOF
+cat > /etc/mosquitto/conf.d/mosquitto.conf <<EOF
 listener 1883
 listener 8000
 protocol websockets
 http_dir $http_dir
 EOF
-mosquitto -c ${HOME}/.0/.tmp/mosquitto/mosquitto.conf -v
+sudo service mosquitto restart
 fi
-

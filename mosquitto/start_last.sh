@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mosquitto_conf=${HOME}/.0/.tmp/mosquitto/mosquitto.conf
+mosquitto_conf=${HOME}/.0/mosquitto/.tmp/mosquitto.conf
 if [ -f $mosquitto_conf ]
 then
     mosquitto -c $mosquitto_conf -v

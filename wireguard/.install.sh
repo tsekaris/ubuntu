@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo apt-get install software-properties-common -y #Χρήση ppa στο λειτουργικό
-sudo add-apt-repository ppa:wireguard/wireguard
+sudo add-apt-repository ppa:wireguard/wireguard -y
 #sudo apt-get update #Δεν χρειάζεται στο ubuntu 18.04
 sudo apt-get install wireguard -y
 sudo modprobe wireguard #or reboot. Ενεργοποίηση στον linux πυρήνα
