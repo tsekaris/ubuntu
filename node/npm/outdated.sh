@@ -1,3 +1,3 @@
 #!/bin/sh
 
-npm outdated -g --depth=0
+sudo npm outdated -g --depth=0

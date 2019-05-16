@@ -1,3 +1,3 @@
 #!/bin/sh
 
-npm list -g --depth=0
+sudo npm list -g --depth=0
