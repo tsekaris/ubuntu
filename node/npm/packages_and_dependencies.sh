@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo npm list -g 
+npm list -g
