@@ -5,3 +5,6 @@ install(){
   sudo npm install -g npm #update npm
   sudo npm install -g --unsafe-perm node-red # Χωρίς nvm απαιτείται sudo
 }
+#install
+
+# NOT WORKING με .config πρόβλημα
