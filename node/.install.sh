@@ -13,7 +13,8 @@ nodesource(){
 nvm(){
   sudo apt-get install curl -y
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-  source ~/.bashrc #Δεν λειτουργεί.
+  #source ~/.bashrc #Δεν λειτουργεί.
+  exec bash
   nvm install 10.15.1
   nvm use 10.15.1
   nvm alias default 10.15.1
