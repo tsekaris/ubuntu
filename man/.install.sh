@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo apt-get install man -y
+sudo apt-get install man-db -y
