@@ -9,7 +9,7 @@ nodesource(){
   # use npm without sudo
   mkdir ~/.npm-global
   npm config set prefix '~/.npm-global'
-  line="export PATH=~/.npm-global/bin:$PATH # tsek: npm without sudo"
+  line="export PATH=~/.npm-global/bin:$PATH #tsekaris"
   grep -Fxq "$line" ~/.bashrc || echo "$line" >> ~/.bashrc
   export PATH=~/.npm-global/bin:$PATH # Για να έχει συνέχεια τα installs χωρίς "source .bashrc"
   npm install -g npm
