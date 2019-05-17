@@ -6,6 +6,7 @@ nodesource(){
   sudo apt-get install curl -y
   curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
   sudo apt-get install nodejs -y
+  # use npm without sudo
   mkdir ~/.npm-global
   npm config set prefix '~/.npm-global'
   export PATH=~/.npm-global/bin:$PATH
