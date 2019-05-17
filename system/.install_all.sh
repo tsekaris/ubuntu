@@ -9,3 +9,5 @@ do
     echo -----------------------------------------------------------------------------
     sh "$script"
 done
+read -p "Enter to reboot" dummy
+sudo reboot
