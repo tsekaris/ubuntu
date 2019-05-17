@@ -4,6 +4,6 @@ sudo apt-get upgrade -y
 mkdir ~/0
 for script in $HOME/.0/*/.install.sh
 do
-    read -p "Install $script (y)?" yn
-    [ "$yn" = y ] && sh "$script"
+    read -p "Install $script (yes: enter - no: n)?" yn
+    [ "$yn" != n ] && sh "$script"
 done
