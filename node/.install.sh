@@ -9,8 +9,9 @@ nodesource(){
   # use npm without sudo
   mkdir ~/.npm-global
   npm config set prefix '~/.npm-global'
-  export PATH=~/.npm-global/bin:$PATH
-  echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
+  line="export PATH=~/.npm-global/bin:$PATH # tsek: npm without sudo"
+  grep -Fxq "$line" ~/.bashrc || echo "$line" >> ~/.bashrc
+  export PATH=~/.npm-global/bin:$PATH # Για να έχει συνέχεια τα installs χωρίς "source .bashrc"
   npm install -g npm
   echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 }
