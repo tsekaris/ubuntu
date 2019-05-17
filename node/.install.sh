@@ -6,7 +6,7 @@ nodesource(){
   sudo apt-get install curl -y
   curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
   sudo apt-get install nodejs -y
-  sudo npm install -npm # install
+  #sudo npm install -npm # install
 }
 
 # nvm
@@ -24,9 +24,9 @@ nvm(){
 
 # node-red install που προτιμάει nodejs LTS έκδοση
 red(){
-  npm install -g npm #update npm
-  npm install -g --unsafe-perm node-red # Χωρίς nvm απαιτείται sudo
+  sudo npm install -g npm #update npm
+  sudo npm install -g --unsafe-perm node-red # Χωρίς nvm απαιτείται sudo
 }
 
-nvm
+nodesource
 red
