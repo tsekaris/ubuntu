@@ -71,7 +71,7 @@ n(){
 # fzf dropdown list and not dropup
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 
-if [ -d ~/.npm-global ]
+if [ -d $HOME/.npm-global ]
 then
-    export PATH="$PATH:~/npm-global/bin"
+    export PATH="$PATH:$HOME/.npm-global/bin"
 fi
