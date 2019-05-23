@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 sudo apt-get install curl -y
 # Add the release PGP keys:
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
