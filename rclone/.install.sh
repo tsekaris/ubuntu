@@ -5,6 +5,7 @@ ubuntu(){
 }
 
 site(){
+  sudo apt-get install curl -y
   curl https://rclone.org/install.sh | sudo bash
 }
 
