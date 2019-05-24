@@ -7,7 +7,6 @@ ubuntu(){
 ppa(){
   sudo apt-get install software-properties-common -y #Χρήση ppa στο λειτουργικό
   sudo add-apt-repository ppa:jonathonf/vim -y
-  sudo apt-get update -y
   sudo apt-get install vim -y
 }
 
