@@ -8,6 +8,7 @@ do
     echo "Installing: $script"
     echo -----------------------------------------------------------------------------
     sh "$script"
+    read -p "Press enter to continue." dummy
 done
-read -p "Enter to reboot" dummy
+read -p "Press enter to reboot." dummy
 sudo reboot
