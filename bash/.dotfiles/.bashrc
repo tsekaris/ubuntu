@@ -54,6 +54,12 @@ pc () {
     esac
 }
 
+if [ -z "$SSH_AUTH_SOCK" ]
+then
+    eval $(ssh-agent) # Για ssh-add
+fi
+
+
 # Preventing nested ranger instances
 ranger() {
     if [ -z "$RANGER_LEVEL" ]; then
