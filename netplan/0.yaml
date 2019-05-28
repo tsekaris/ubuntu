@@ -1,0 +1,29 @@
+# This file describes the network interfaces available on your system
+# For more information, see netplan(5).
+#paok
+#tsekaris
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp2s0:
+      dhcp4: no
+      dhcp6: no
+      addresses: [192.168.100.3/24]
+      gateway4: 192.168.100.1
+      nameservers:
+        addresses: [8.8.8.8, 8.8.4.4]
+    enp3s0:
+      dhcp4: yes
+      dhcp6: no
+  wifis:
+    wlp1s0:
+      dhcp4: no
+      dhcp6: no
+      addresses: [192.168.100.4/24]
+      gateway4: 192.168.100.1
+      nameservers:
+        addresses: [8.8.8.8, 8.8.4.4]
+      access-points:
+       "tencool":
+         password: "91de093f1d71"
