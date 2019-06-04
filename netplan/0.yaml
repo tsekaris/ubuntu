@@ -7,12 +7,12 @@ network:
   renderer: networkd
   ethernets:
     enp2s0:
-      dhcp4: no
-      dhcp6: no
+      dhcp4: false
+      dhcp6: false
       addresses: [172.16.6.3/24]
       gateway4: 172.16.6.241
       nameservers:
         addresses: [8.8.8.8, 8.8.4.4]
     enp3s0:
-      dhcp4: yes
-      dhcp6: no
+      dhcp4: false
+      dhcp6: false
