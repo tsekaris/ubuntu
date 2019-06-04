@@ -9,21 +9,10 @@ network:
     enp2s0:
       dhcp4: no
       dhcp6: no
-      addresses: [192.168.100.3/24]
-      gateway4: 192.168.100.1
+      addresses: [172.16.6.3/24]
+      gateway4: 172.16.6.241
       nameservers:
         addresses: [8.8.8.8, 8.8.4.4]
     enp3s0:
       dhcp4: yes
       dhcp6: no
-  wifis:
-    wlp1s0:
-      dhcp4: no
-      dhcp6: no
-      addresses: [192.168.100.4/24]
-      gateway4: 192.168.100.1
-      nameservers:
-        addresses: [8.8.8.8, 8.8.4.4]
-      access-points:
-       "tencool":
-         password: "91de093f1d71"
