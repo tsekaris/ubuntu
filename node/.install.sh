@@ -4,7 +4,7 @@
 # Από NodeSource.
 nodesource(){
   sudo apt-get install curl -y
-  curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+  curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
   sudo apt-get install nodejs -y
   # use npm without sudo
   mkdir ~/.npm-global
